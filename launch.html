@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>viachaz studio — finish your website</title>
+<meta name="description" content="submit your final details to launch your viachaz studio website.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232a2e3d'/%3E%3Cpath d='M6 8 L16 24 L26 8' stroke='%233f5f8f' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='24' r='2.5' fill='%23e65045'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --blue:#3f5f8f;
+  --blue-dk:#2e4a72;
+  --coral:#e65045;
+  --ink:#2a2e3d;
+  --body:#525f7a;
+  --muted:#8a8f9e;
+  --lavender:#dbe2f0;
+  --wheat:#e0d3b8;
+  --bg:#f6f2ea;
+  --white:#ffffff;
+  --rule:rgba(82,95,122,0.12);
+  --success-bg:#edf6f0;
+  --success:#2a7a4f;
+}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+
+/* ── NAV ── */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  height:58px;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 2rem;
+  background:rgba(246,242,234,.96);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-logo{
+  font-family:'Playfair Display',serif;
+  font-size:1.05rem;
+  color:var(--ink);
+  text-decoration:none;
+}
+.nav-logo em{font-style:italic;color:var(--blue)}
+.nav-back{
+  font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue);text-decoration:none;
+  border:1px solid rgba(63,95,143,.3);
+  padding:.42rem 1rem;border-radius:2px;
+  transition:all .2s;
+}
+.nav-back:hover{background:var(--blue);color:#fff}
+
+/* ── PAGE WRAPPER ── */
+.page{
+  max-width:640px;
+  margin:0 auto;
+  padding:110px 24px 80px;
+}
+
+/* ── HEADER ── */
+.page-header{
+  margin-bottom:40px;
+}
+.eyebrow{
+  display:block;
+  font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--blue);font-weight:500;
+  margin-bottom:.8rem;
+}
+h1{
+  font-family:'Playfair Display',serif;
+  font-size:clamp(2rem,4vw,2.8rem);
+  font-weight:400;
+  line-height:1.1;
+  letter-spacing:-.01em;
+  color:var(--ink);
+  margin-bottom:1.2rem;
+}
+h1 em{font-style:italic;color:var(--blue)}
+.rule{
+  border:none;border-top:1px solid var(--rule);
+  margin:1.6rem 0;
+}
+.intro{
+  font-size:.95rem;color:var(--body);font-weight:300;line-height:1.8;
+}
+
+/* ── FORM ── */
+.form-card{
+  background:var(--white);
+  border:1px solid var(--rule);
+  border-radius:4px;
+  padding:36px;
+}
+
+.form-section-label{
+  font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);font-weight:500;
+  margin:28px 0 16px;
+  display:flex;align-items:center;gap:12px;
+}
+.form-section-label::after{
+  content:'';flex:1;height:1px;background:var(--rule);
+}
+.form-section-label:first-child{margin-top:0}
+
+.field{
+  margin-bottom:18px;
+}
+.field label{
+  display:block;
+  font-size:.72rem;font-weight:500;letter-spacing:.04em;
+  color:var(--ink);
+  margin-bottom:6px;
+}
+.field label .opt{
+  font-weight:300;color:var(--muted);margin-left:4px;
+}
+.field input,
+.field textarea,
+.field select{
+  width:100%;
+  background:var(--bg);
+  border:1px solid rgba(82,95,122,0.18);
+  border-radius:2px;
+  color:var(--ink);
+  font-family:'DM Sans',sans-serif;
+  font-size:.88rem;
+  font-weight:300;
+  padding:11px 14px;
+  outline:none;
+  transition:border-color .2s,box-shadow .2s;
+  -webkit-appearance:none;
+  appearance:none;
+}
+.field input:focus,
+.field textarea:focus{
+  border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(63,95,143,.08);
+  background:var(--white);
+}
+.field input::placeholder,
+.field textarea::placeholder{color:var(--muted);font-weight:300}
+.field textarea{resize:vertical;min-height:90px;line-height:1.6}
+
+/* hours grid */
+.hours-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+}
+.hours-row{
+  display:grid;
+  grid-template-columns:90px 1fr;
+  align-items:center;
+  gap:8px;
+  font-size:.8rem;color:var(--body);font-weight:300;
+}
+.hours-row input{
+  padding:9px 10px;
+  font-size:.8rem;
+}
+
+/* file upload */
+.file-drop{
+  border:1.5px dashed rgba(63,95,143,.25);
+  border-radius:4px;
+  background:var(--bg);
+  padding:24px 20px;
+  text-align:center;
+  cursor:pointer;
+  transition:border-color .2s,background .2s;
+  position:relative;
+}
+.file-drop:hover{
+  border-color:rgba(63,95,143,.5);
+  background:#f0ecdf;
+}
+.file-drop input[type="file"]{
+  position:absolute;inset:0;
+  opacity:0;cursor:pointer;width:100%;height:100%;
+}
+.file-drop-icon{
+  font-size:1.4rem;margin-bottom:8px;display:block;
+}
+.file-drop-label{
+  font-size:.8rem;font-weight:400;color:var(--body);
+  display:block;margin-bottom:4px;
+}
+.file-drop-sub{
+  font-size:.7rem;color:var(--muted);font-weight:300;
+}
+.file-list{
+  margin-top:10px;
+  display:flex;flex-direction:column;gap:6px;
+}
+.file-chip{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--lavender);
+  border-radius:2px;
+  padding:5px 10px;
+  font-size:.72rem;color:var(--blue);font-weight:400;
+  text-align:left;
+}
+.file-chip span{
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:260px;
+}
+
+/* submit area */
+.submit-area{
+  margin-top:28px;
+  display:flex;flex-direction:column;align-items:flex-start;gap:12px;
+}
+.btn-submit{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--blue);color:#fff;
+  padding:.9rem 2.4rem;
+  font-family:'DM Sans',sans-serif;
+  font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  border:none;border-radius:2px;cursor:pointer;
+  transition:background .2s,transform .15s;
+  white-space:nowrap;
+  width:100%;
+}
+.btn-submit:hover{background:var(--blue-dk)}
+.btn-submit:active{transform:scale(.99)}
+.btn-submit:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.submit-note{
+  font-size:.72rem;color:var(--muted);font-weight:300;
+  text-align:center;width:100%;
+}
+
+/* ── CONFIRMATION ── */
+.confirmation{
+  display:none;
+  text-align:center;
+  padding:56px 32px;
+  background:var(--white);
+  border:1px solid var(--rule);
+  border-radius:4px;
+}
+.confirmation.show{display:block}
+.conf-check{
+  width:52px;height:52px;
+  background:var(--lavender);
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 24px;
+}
+.conf-check svg{width:22px;height:22px;stroke:var(--blue);stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.conf-h{
+  font-family:'Playfair Display',serif;
+  font-size:1.8rem;font-weight:400;
+  color:var(--ink);margin-bottom:12px;
+}
+.conf-p{
+  font-size:.92rem;color:var(--body);font-weight:300;line-height:1.8;
+  max-width:40ch;margin:0 auto;
+}
+.conf-rule{border:none;border-top:1px solid var(--rule);margin:24px 0}
+.conf-back{
+  font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--blue);text-decoration:none;
+  border-bottom:1px solid rgba(63,95,143,.3);padding-bottom:2px;
+}
+
+/* ── FOOTER ── */
+.footer-links{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+.footer-sep{color:var(--rule);font-size:.8rem}
+.footer-sub{font-size:.68rem;color:var(--muted)}
+/* original footer below */
+footer{
+  padding:32px 24px;
+  text-align:center;
+  font-size:.7rem;color:var(--muted);font-weight:300;
+  border-top:1px solid var(--rule);
+  margin-top:0;
+}
+footer a{color:var(--blue);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+/* ── MOBILE ── */
+@media(max-width:600px){
+  .page{padding:90px 16px 60px}
+  .form-card{padding:24px 18px}
+  .hours-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://viachaz.com">viachaz <em>studio</em></a>
+  <a class="nav-back" href="https://viachaz.com">← back to site</a>
+</nav>
+
+<div class="page">
+
+  <!-- ── HEADER ── -->
+  <div class="page-header">
+    <span class="eyebrow">viachaz studio</span>
+    <h1>let's finish your <em>website.</em></h1>
+    <hr class="rule">
+    <p class="intro">
+      thanks again for working with viachaz studio.<br>
+      add the final details below and upload any photos or logos you'd like included.<br><br>
+      once submitted, your site will be finalized and launched.
+    </p>
+  </div>
+
+  <!-- ── FORM ── -->
+  <div class="form-card" id="form-card">
+    <form id="launch-form" action="https://formsubmit.co/chaz@viachaz.com" method="POST" enctype="multipart/form-data">
+
+      <!-- formsubmit config -->
+      <input type="hidden" name="_subject" value="New Launch Submission — Viachaz Studio">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="">
+
+      <!-- ── BUSINESS INFO ── -->
+      <div class="form-section-label">business info</div>
+
+      <div class="field">
+        <label for="phone">business phone</label>
+        <input type="tel" id="phone" name="Business Phone" placeholder="(810) 555-0100" autocomplete="tel">
+      </div>
+
+      <div class="field">
+        <label for="email">business email</label>
+        <input type="email" id="email" name="Business Email" placeholder="you@yourbusiness.com" autocomplete="email">
+      </div>
+
+      <div class="field">
+        <label for="address">business address</label>
+        <input type="text" id="address" name="Business Address" placeholder="123 Main St, Flint, MI 48502" autocomplete="street-address">
+      </div>
+
+      <!-- ── HOURS ── -->
+      <div class="form-section-label">hours of operation</div>
+
+      <div class="hours-grid">
+        <div class="hours-row">
+          <span>monday</span>
+          <input type="text" name="Hours Monday" placeholder="9am – 5pm">
+        </div>
+        <div class="hours-row">
+          <span>tuesday</span>
+          <input type="text" name="Hours Tuesday" placeholder="9am – 5pm">
+        </div>
+        <div class="hours-row">
+          <span>wednesday</span>
+          <input type="text" name="Hours Wednesday" placeholder="9am – 5pm">
+        </div>
+        <div class="hours-row">
+          <span>thursday</span>
+          <input type="text" name="Hours Thursday" placeholder="9am – 5pm">
+        </div>
+        <div class="hours-row">
+          <span>friday</span>
+          <input type="text" name="Hours Friday" placeholder="9am – 5pm">
+        </div>
+        <div class="hours-row">
+          <span>saturday</span>
+          <input type="text" name="Hours Saturday" placeholder="closed">
+        </div>
+        <div class="hours-row">
+          <span>sunday</span>
+          <input type="text" name="Hours Sunday" placeholder="closed">
+        </div>
+      </div>
+
+      <!-- ── UPLOADS ── -->
+      <div class="form-section-label">uploads</div>
+
+      <div class="field">
+        <label>logo <span class="opt">(optional)</span></label>
+        <div class="file-drop" id="logo-drop">
+          <input type="file" name="Logo" accept="image/*,.svg,.pdf,.ai,.eps" id="logo-input" onchange="showFiles('logo-input','logo-list')">
+          <span class="file-drop-icon">🖼</span>
+          <span class="file-drop-label">click to upload or drag &amp; drop</span>
+          <span class="file-drop-sub">png, jpg, svg, pdf — any format works</span>
+        </div>
+        <div class="file-list" id="logo-list"></div>
+      </div>
+
+      <div class="field">
+        <label>photos <span class="opt">(optional — up to 10)</span></label>
+        <div class="file-drop" id="photo-drop">
+          <input type="file" name="Photos" accept="image/*" multiple id="photo-input" onchange="showFiles('photo-input','photo-list')">
+          <span class="file-drop-icon">📷</span>
+          <span class="file-drop-label">click to upload or drag &amp; drop</span>
+          <span class="file-drop-sub">jpg, png, heic — select multiple at once</span>
+        </div>
+        <div class="file-list" id="photo-list"></div>
+      </div>
+
+      <!-- ── ONLINE PRESENCE ── -->
+      <div class="form-section-label">online presence</div>
+
+      <div class="field">
+        <label for="domain">domain name <span class="opt">(if you have one)</span></label>
+        <input type="text" id="domain" name="Domain Name" placeholder="yourbusiness.com">
+      </div>
+
+      <div class="field">
+        <label for="gbp">google business profile link <span class="opt">(if you have one)</span></label>
+        <input type="url" id="gbp" name="Google Business Profile" placeholder="https://maps.app.goo.gl/...">
+      </div>
+
+      <div class="field">
+        <label for="social">instagram or facebook <span class="opt">(optional)</span></label>
+        <input type="text" id="social" name="Social Media" placeholder="instagram.com/yourbusiness or facebook.com/yourbusiness">
+      </div>
+
+      <!-- ── ANYTHING ELSE ── -->
+      <div class="form-section-label">anything else</div>
+
+      <div class="field">
+        <label for="notes">extra notes <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="Extra Notes" placeholder="any specific requests, colors you like, things to include or avoid…"></textarea>
+      </div>
+
+      <!-- ── SUBMIT ── -->
+      <div class="submit-area">
+        <button type="submit" class="btn-submit" id="submit-btn">submit details</button>
+        <p class="submit-note">your information goes directly to chaz. expect a reply within 24 hours.</p>
+      </div>
+
+    </form>
+  </div>
+
+  <!-- ── CONFIRMATION ── -->
+  <div class="confirmation" id="confirmation">
+    <div class="conf-check">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h2 class="conf-h">thanks — everything has been received.</h2>
+    <p class="conf-p">your website will be finalized shortly. chaz will be in touch within 24 hours.</p>
+    <hr class="conf-rule">
+    <a class="conf-back" href="https://viachaz.com">back to viachaz.com</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-links">
+    <a href="https://viachaz.com">viachaz.com</a>
+    <span class="footer-sep">·</span>
+    <a href="https://viachaz.com/payment">payment</a>
+    <span class="footer-sep">·</span>
+    <a href="https://viachaz.com/launch">site intake form</a>
+  </div>
+  <div class="footer-sub">questions? text <a href="sms:+14803522549">(480) 352-2549</a></div>
+</footer>
+
+<script>
+// ── file chip preview ──
+function showFiles(inputId, listId) {
+  const input = document.getElementById(inputId);
+  const list  = document.getElementById(listId);
+  const files = Array.from(input.files);
+  list.innerHTML = files.map(f => `
+    <div class="file-chip">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+      <span>${f.name}</span>
+      <span style="color:var(--muted);flex-shrink:0">${(f.size/1024/1024).toFixed(1)}mb</span>
+    </div>
+  `).join('');
+}
+
+// ── form submit — show confirmation ──
+document.getElementById('launch-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('submit-btn');
+  btn.disabled = true;
+  btn.textContent = 'sending…';
+
+  try {
+    const formData = new FormData(this);
+    const res = await fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (res.ok || res.status === 200) {
+      document.getElementById('form-card').style.display = 'none';
+      document.getElementById('confirmation').classList.add('show');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      btn.disabled = false;
+      btn.textContent = 'try again';
+    }
+  } catch {
+    // fallback: still show confirmation (formsubmit may redirect)
+    document.getElementById('form-card').style.display = 'none';
+    document.getElementById('confirmation').classList.add('show');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+});
+</script>
+
+</body>
+</html>

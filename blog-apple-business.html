@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apple Business: What It Is and Why Local Businesses Need It — viachaz studio</title>
+<meta name="description" content="Most local businesses are invisible to iPhone users. Apple Business puts your business in front of over a billion Apple devices — Maps, Siri, and CarPlay — for free.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--blue:#3f5f8f;--blue-dk:#2e4a72;--ink:#2a2e3d;--body:#525f7a;--muted:#8a8f9e;--lav:#dbe2f0;--bg:#f6f2ea;--white:#ffffff;--rule:rgba(82,95,122,0.12)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;background:rgba(246,242,234,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nl{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ink)}.nl em{font-style:italic;color:var(--blue)}
+.nav-back{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(63,95,143,.25);padding:.38rem .9rem;border-radius:2px;transition:all .2s}
+.nav-back:hover{background:var(--blue);color:#fff}
+.article-wrap{max-width:680px;margin:0 auto;padding:120px 2rem 80px}
+.article-eyebrow{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.article-eyebrow::before{content:'';width:22px;height:1px;background:var(--blue);display:block;opacity:.5}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.4rem}
+h1 em{font-style:italic;color:var(--blue)}
+.article-intro{font-size:1.05rem;color:var(--ink);font-weight:400;line-height:1.8;margin-bottom:2.4rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:.7rem;margin-top:2.4rem}
+h2 em{font-style:italic;color:var(--blue)}
+p{font-size:.95rem;color:var(--body);font-weight:300;line-height:1.85;margin-bottom:1.1rem}
+p:last-child{margin-bottom:0}
+.pullquote{border-left:3px solid var(--blue);padding:.8rem 1.4rem;margin:2rem 0;background:var(--lav)}
+.pullquote p{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--ink);font-weight:400;margin:0}
+.divider{border:none;border-top:1px solid var(--rule);margin:2rem 0}
+.article-cta{background:var(--ink);padding:4rem 2rem;margin-top:4rem}
+.article-cta-inner{max-width:520px;margin:0 auto;text-align:center}
+.cta-ey{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(219,226,240,.4);font-weight:500;margin-bottom:.8rem;display:block}
+.cta-h{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;color:#fff;line-height:1.15;margin-bottom:.8rem}
+.cta-h em{font-style:italic;color:var(--lav)}
+.cta-p{font-size:.9rem;color:rgba(219,226,240,.5);font-weight:300;line-height:1.8;margin-bottom:2rem;max-width:42ch;margin-left:auto;margin-right:auto}
+.cta-box{background:rgba(255,255,255,.05);border:1px solid rgba(219,226,240,.1);padding:1.8rem;margin-bottom:1.2rem}
+.cta-lbl{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(219,226,240,.4);margin-bottom:.4rem;display:block}
+.cta-num{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;margin-bottom:.6rem;line-height:1;display:block}
+.cta-hint{font-size:.75rem;color:rgba(219,226,240,.35);font-weight:300;line-height:1.6;margin-bottom:1.2rem;font-style:italic;display:block}
+.cta-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;padding:.75rem 1.4rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:background .2s}
+.cta-btn:hover{background:var(--blue-dk)}
+.cta-alt{font-size:.72rem;color:rgba(219,226,240,.35);font-weight:300;margin-top:1rem}
+.cta-alt a{color:rgba(219,226,240,.55);border-bottom:1px solid rgba(219,226,240,.2)}
+footer{background:var(--ink);border-top:1px solid rgba(219,226,240,.08);padding:2rem 0;width:100%}
+.footer-inner{max-width:960px;margin:0 auto;padding:0 2rem;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.footer-links a{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(219,226,240,.4);transition:color .2s}
+.footer-links a:hover{color:#fff}
+.footer-sep{color:rgba(219,226,240,.15);font-size:.8rem}
+.footer-sub{font-size:.65rem;color:rgba(219,226,240,.25)}
+.footer-sub a{color:rgba(219,226,240,.4)}
+.article-byline{font-size:.72rem;color:var(--muted);font-weight:300;letter-spacing:.04em;margin-bottom:2rem;margin-top:-.6rem}
+@media(max-width:600px){
+  .article-wrap{padding:100px 1.2rem 60px}
+  .article-cta{padding:3rem 1.2rem}
+}
+</style>
+<meta name="author" content="Chaz Johnson">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"Apple Business: What It Is and Why Local Businesses Need It","description":"Most local businesses are invisible to iPhone users. Apple Business puts your business in front of over a billion Apple devices — Maps, Siri, and CarPlay — for free.","url":"https://viachaz.com/blog-apple-business.html","datePublished":"2026-05-07","author":{"@type":"Person","name":"Chaz Johnson","url":"https://viachaz.com"},"publisher":{"@type":"Organization","name":"viachaz studio","url":"https://viachaz.com"}}
+</script>
+</head>
+<body>
+<nav>
+  <a class="nl" href="/">viachaz <em>studio</em></a>
+  <a class="nav-back" href="/#blog">← blog</a>
+</nav>
+<div class="article-wrap">
+  <div class="article-eyebrow">Local Presence</div>
+  <h1>Apple Business: what it is<br><em>and why it matters.</em></h1>
+  <p class="article-byline">by <a href="https://viachaz.com" style="color:inherit;border-bottom:1px solid rgba(63,95,143,.3)">Chaz Johnson</a> &mdash; viachaz studio</p>
+  <p class="article-intro">most local businesses are on google. fewer are on apple. that gap is quietly costing them customers every day — because nearly half of all us smartphone users are on iphones, and those phones default to apple maps.</p>
+<h2>what apple business actually is</h2>
+<p>Apple Business is Apple's platform for managing how your business appears across the Apple ecosystem — Maps, Siri, Spotlight search, CarPlay, Wallet, and Apple Mail. You access and manage it at business.apple.com. It's free. Setup takes about 20 minutes. And most local businesses have never done it.</p>
+<p>The core feature for a local business is your Maps listing — the equivalent of a Google Business Profile, but for every iPhone, iPad, Mac, and Apple Watch. When someone asks Siri "find a landscaper near me" or opens Apple Maps to look for a barber, your listing is what they see. Or don't see.</p>
+
+<div class="divider"></div>
+
+<h2>why the numbers matter</h2>
+<p>Apple has over 2.2 billion active devices worldwide. In the US, iPhone holds roughly 57% of the smartphone market in 2026. That means more than half your potential customers default to Apple Maps when they need directions, and Siri when they need a local recommendation.</p>
+<p>If your business isn't claimed and optimized on Apple Business, those customers go to whoever is. It's not about being on every platform for its own sake. It's about being present wherever the search is already happening. For local service businesses, that's both Google and Apple.</p>
+
+<div class="pullquote"><p>"if google is the busy highway, apple maps is the well-lit main street. you want both — because your customers are searching on both."</p></div>
+
+<h2>what you control on your listing</h2>
+<p>Once claimed, you control how your business appears across the Apple ecosystem: name, address, phone number, hours, website, category, photos, and description. You can add custom actions so customers can call, book, or get directions in one tap directly from your listing.</p>
+<p>Apple has also added Showcases — posts for promotions or seasonal offers directly on your listing. Branded Caller ID shows your business name and logo when you call a customer from an iPhone. Business Caller ID appears on inbound calls. These are small trust signals that compound over time.</p>
+
+<div class="divider"></div>
+
+<h2>the nap rule: consistency is everything</h2>
+<p>NAP — Name, Address, Phone — must be exactly identical across every platform. Your Apple listing, your Google profile, your website, Yelp, Facebook. Even small inconsistencies (Street vs St., or a missing unit number) send conflicting signals to search systems and quietly hurt your visibility on both platforms.</p>
+<p>When your Apple listing, Google profile, and website all carry matching NAP information, they reinforce each other. Apple and Google both use cross-platform consistency as a trust signal. Consistent means you rank higher. Inconsistent means you lose ground without knowing why.</p>
+
+<div class="divider"></div>
+
+<h2>how to set it up</h2>
+<p>Go to business.apple.com. Sign in with an Apple ID. Search your business name — Apple may have already created a basic pin for you. If so, claim it. If nothing exists, add it fresh. Fill in every field completely. Upload photos of your storefront, your work, your team. Set accurate hours. Link to your website. Use a description with the words your customers actually search.</p>
+<p>Apple reviews submissions before they go live — usually a few days. After approval, keep your listing current. Hours, photos, and contact info should be checked every few months the same way you'd check a Google profile.</p>
+
+<div class="pullquote"><p>"your listing is either working for you at midnight when someone's searching on their phone — or it isn't. setup takes 20 minutes."</p></div>
+
+<h2>google and apple together</h2>
+<p>The goal isn't to pick one. The goal is to show up in both ecosystems — because your customers aren't on just one. Some search on Google. Some ask Siri. Some open Apple Maps and look around their neighborhood. A complete local presence means you appear in all three of those moments, with matching information, real photos, and a website waiting to convert the click.</p>
+<p>Every build through viachaz studio includes Google Business Profile setup and Apple Business setup as part of the work. Both go live together, consistent, connected to your site. That's what a complete local presence looks like in 2026.</p>
+</div>
+<div class="article-cta">
+  <div class="article-cta-inner">
+    <span class="cta-ey">Get Started</span>
+    <h2 class="cta-h">ready to get found online?<br><em>start here.</em></h2>
+    <p class="cta-p">text me your name, business, and what you do. live preview within 24 hours. no payment until you approve.</p>
+    <div class="cta-box">
+      <span class="cta-lbl">text chaz at</span>
+      <span class="cta-num">(480) 352-2549</span>
+      <span class="cta-hint">"hey — i run [business] in [city]. i need a website."</span>
+      <a href="sms:+14803522549&body=hey%20%E2%80%94%20i%20run%20%5Bbusiness%5D%20in%20%5Bcity%5D.%20i%20need%20a%20website." class="cta-btn">💬 open messages</a>
+    </div>
+    <p class="cta-alt">prefer email? <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://viachaz.com">viachaz.com</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/payment">payment</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/launch">site intake form</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/refer">refer &amp; earn</a>
+      <span class="footer-sep">·</span>
+      <a href="https://methodwithai.com">method with ai</a>
+      <span class="footer-sep">·</span>
+      <a href="https://mygradpage.com">my grad page</a>
+    </div>
+    <div class="footer-sub">questions? text <a href="sms:+14803522549">(480) 352-2549</a> or email <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></div>
+  </div>
+</footer>
+</body>
+</html>

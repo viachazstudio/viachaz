@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A+ Mobile Detailing — Case Study | viachaz studio</title>
+<meta name="description" content="How viachaz studio built a custom one-page website for A+ Mobile Detailing, St. Louis — light-mode, mascot hero, ceramic coating section, and live in 24 hours.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--blue:#3f5f8f;--blue-dk:#2e4a72;--blue-lt:#eef2f8;--ink:#2a2e3d;--body:#525f7a;--muted:#8a8f9e;--lav:#dbe2f0;--bg:#f6f2ea;--white:#ffffff;--rule:rgba(82,95,122,0.12)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+.container{max-width:760px;margin:0 auto;padding:0 2rem}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;background:rgba(246,242,234,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nl{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ink)}.nl em{font-style:italic;color:var(--blue)}
+.nav-back{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(63,95,143,.25);padding:.38rem .9rem;border-radius:2px;transition:all .2s}
+.nav-back:hover{background:var(--blue);color:#fff}
+.hero{padding:120px 0 72px;border-bottom:1px solid var(--rule)}
+.eyebrow-tag{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.eyebrow-tag::before{content:'';width:22px;height:1px;background:var(--blue);display:block;opacity:.5}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,4vw,3.2rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:1rem}
+h1 em{font-style:italic;color:var(--blue)}
+.hero-sub{font-size:1rem;color:var(--body);font-weight:300;line-height:1.8;max-width:54ch;margin-bottom:2rem}
+.hero-meta{display:flex;gap:2rem;flex-wrap:wrap;padding-top:1.4rem;border-top:1px solid var(--rule)}
+.meta-label{font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:.25rem}
+.meta-val{font-size:.88rem;font-weight:500;color:var(--ink)}
+.site-preview{background:var(--ink);padding:2.4rem 0}
+.preview-frame{border-radius:4px;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.preview-bar{background:#1e1e1e;padding:.5rem .8rem;display:flex;align-items:center;gap:.5rem}
+.preview-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.preview-url{flex:1;background:rgba(255,255,255,.06);border-radius:3px;padding:.25rem .7rem;font-size:.65rem;color:rgba(255,255,255,.3);margin:0 .4rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.preview-img{width:100%;display:block;aspect-ratio:16/9;object-fit:cover;object-position:top}
+article{padding:4rem 0}
+h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:400;color:var(--ink);margin-bottom:.8rem;margin-top:2.8rem}
+h2:first-child{margin-top:0}
+h2 em{font-style:italic;color:var(--blue)}
+p{font-size:.95rem;color:var(--body);font-weight:300;line-height:1.85;margin-bottom:1.1rem}
+p:last-child{margin-bottom:0}
+.lead{font-size:1.05rem;color:var(--ink);font-weight:400;line-height:1.75;margin-bottom:1.4rem}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:2rem 0}
+.feature-card{background:var(--white);border:1px solid var(--rule);padding:1.4rem}
+.fi{font-size:1.2rem;margin-bottom:.6rem}
+.ft{font-size:.82rem;font-weight:500;color:var(--ink);margin-bottom:.35rem}
+.fd{font-size:.76rem;color:var(--body);font-weight:300;line-height:1.6}
+.stat-row{display:flex;gap:2rem;flex-wrap:wrap;background:var(--lav);padding:1.6rem 2rem;margin:2rem 0}
+.sn{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--blue);line-height:1;display:block}
+.sl{font-size:.58rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block;margin-top:.2rem}
+.divider{border:none;border-top:1px solid var(--rule);margin:2.4rem 0}
+.visit-link{display:inline-flex;align-items:center;gap:.5rem;font-size:.78rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(63,95,143,.25);padding:.55rem 1.2rem;border-radius:2px;transition:all .2s;margin-top:.8rem;margin-right:.6rem}
+.visit-link:hover{background:var(--blue);color:#fff}
+.sms-section{background:var(--ink);padding:5rem 0}
+.sms-inner{max-width:520px;margin:0 auto;text-align:center;padding:0 2rem}
+.sms-ey{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(219,226,240,.4);font-weight:500;margin-bottom:.8rem;display:block}
+.sms-h{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;color:var(--white);line-height:1.15;margin-bottom:.8rem;letter-spacing:-.01em}
+.sms-h em{font-style:italic;color:var(--lav)}
+.sms-p{font-size:.92rem;color:rgba(219,226,240,.5);font-weight:300;line-height:1.8;margin-bottom:2.4rem;max-width:44ch;margin-left:auto;margin-right:auto}
+.sms-box{background:rgba(255,255,255,.05);border:1px solid rgba(219,226,240,.1);padding:2rem;display:block;text-align:center;margin-bottom:1.5rem}
+.sms-lbl{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(219,226,240,.4);margin-bottom:.4rem;display:block}
+.sms-num{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);margin-bottom:.6rem;line-height:1;display:block}
+.sms-hint{font-size:.75rem;color:rgba(219,226,240,.35);font-weight:300;line-height:1.6;margin-bottom:1.2rem;font-style:italic;display:block}
+.sms-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;padding:.75rem 1.4rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:background .2s}
+.sms-btn:hover{background:var(--blue-dk)}
+.sms-alt{font-size:.72rem;color:rgba(219,226,240,.35);font-weight:300;margin-top:1.2rem}
+.sms-alt a{color:rgba(219,226,240,.55);border-bottom:1px solid rgba(219,226,240,.2)}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:640px){
+  .feature-grid{grid-template-columns:1fr}
+  .hero-meta{gap:1.2rem}
+  .stat-row{gap:1.4rem}
+  
+  article{padding:3rem 0}
+  .sms-section{padding:3.5rem 0}
+  .hero{padding:100px 0 56px}
+}
+
+footer{background:var(--ink);border-top:1px solid rgba(219,226,240,.08);padding:2rem}
+.footer-inner{max-width:960px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.footer-links a{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(219,226,240,.4);transition:color .2s}
+.footer-links a:hover{color:var(--white)}
+.footer-sep{color:rgba(219,226,240,.15);font-size:.8rem}
+.footer-sub{font-size:.65rem;color:rgba(219,226,240,.25)}
+.footer-sub a{color:rgba(219,226,240,.4)}
+.footer-sub a:hover{color:var(--white)}
+</style>
+</head>
+<body>
+<nav>
+  <a class="nl" href="/">viachaz <em>studio</em></a>
+  <a class="nav-back" href="/#portfolio">← portfolio</a>
+</nav>
+<div class="hero"><div class="container">
+  <div class="eyebrow-tag">Case Study</div>
+  <h1>A+ Mobile <em>Detailing</em></h1>
+  <p class="hero-sub">a custom-coded one-page site for a st. louis mobile detailing business — mascot hero, ceramic coating section, service packages, and a call button above the fold from day one.</p>
+  <div class="hero-meta">
+    <div><span class="meta-label">Type</span><span class="meta-val">One-page website</span></div>
+    <div><span class="meta-label">Location</span><span class="meta-val">St. Louis, MO</span></div>
+    <div><span class="meta-label">Stack</span><span class="meta-val">HTML · CSS · Vanilla JS</span></div>
+    <div><span class="meta-label">Live Site</span><span class="meta-val"><a href="https://aplusmobiledetail.com" target="_blank" style="color:var(--blue)">aplusmobiledetail.com ↗</a></span></div>
+  </div>
+</div></div>
+<div class="site-preview"><div class="container">
+  <div class="preview-frame">
+    <div class="preview-bar">
+      <div class="preview-dot" style="background:#ff5f57"></div>
+      <div class="preview-dot" style="background:#febc2e"></div>
+      <div class="preview-dot" style="background:#28c840"></div>
+      <div class="preview-url">aplusmobiledetail.com</div>
+    </div>
+    <img class="preview-img" src="assets/images/portfolio/portfolio-aplus.png" alt="A+ Mobile Detailing website screenshot">
+  </div>
+</div></div>
+<article><div class="container">
+  <h2>The brief</h2>
+  <p class="lead">A+ Mobile Detailing is a one-man LLC in St. Louis. Damon comes to you — no drop-off, no waiting. The site needed to turn more Google searches and referrals into calls.</p>
+  <p>The existing online presence was minimal. No website, just a name and a number. The work was good. The digital footprint wasn't keeping up.</p>
+  <p>Built for mobile service businesses where one call can turn into a repeat customer.</p>
+  <hr class="divider">
+  <h2>What we built</h2>
+  <p>A light-mode one-page site built around A+'s existing brand — the mascot character, the blue and gold palette, the energy of a business that takes pride in the work. The hero puts the mascot front and center alongside a bold headline and a call button. Everything below supports the decision to book.</p>
+  <div class="feature-grid">
+    <div class="feature-card"><div class="fi">🎨</div><div class="ft">mascot-driven hero</div><p class="fd">the existing brand mascot anchors the hero section at full scale. the site feels like the brand, not a generic detailing template.</p></div>
+    <div class="feature-card"><div class="fi">📦</div><div class="ft">tiered service packages</div><p class="fd">three clearly laid out packages with pricing and what's included. customers self-select before they call — shorter calls, better fits.</p></div>
+    <div class="feature-card"><div class="fi">🏆</div><div class="ft">ceramic coating section</div><p class="fd">dedicated section for the premium service. breaks it out from the standard packages so it gets the attention a high-ticket upsell deserves.</p></div>
+    <div class="feature-card"><div class="fi">📸</div><div class="ft">before & after gallery</div><p class="fd">real results, not stock photos. the gallery section lets the work do the selling — which is the most honest close there is.</p></div>
+    <div class="feature-card"><div class="fi">📍</div><div class="ft">service area section</div><p class="fd">a dedicated section listing coverage areas across the st. louis metro. helps with local search and sets clear expectations.</p></div>
+    <div class="feature-card"><div class="fi">📱</div><div class="ft">mobile-first, call-forward</div><p class="fd">the call button is the first thing a mobile visitor sees. sticky nav keeps it always visible. most customers land from their phone — the layout is built for that.</p></div>
+  </div>
+  <hr class="divider">
+  <h2>What makes it <em>different</em></h2>
+  <p>Most detailing websites look like they came from the same $12/month builder. This one was designed around what makes A+ actually different — the mascot, the LLC credibility badge, the "i come to you" positioning that removes the biggest objection before the visitor even asks.</p>
+  <p>The facebook link in the nav is intentional. It connects the existing social presence to the new web presence instead of replacing it — customers who already know Damon can find him where they expect, and new customers can see the history of real work.</p>
+  <div class="stat-row">
+    <div><span class="sn">24hr</span><span class="sl">build & launch</span></div>
+    <div><span class="sn">100%</span><span class="sl">custom coded</span></div>
+    <div><span class="sn">LLC</span><span class="sl">credibility built in</span></div>
+    <div><span class="sn">$0</span><span class="sl">upfront before approval</span></div>
+  </div>
+  <hr class="divider">
+  <h2>The result</h2>
+  <p>A professional site that looks and feels like a business that takes its work seriously. The call button is always visible. The packages are clear. The work speaks for itself in the gallery. A customer who lands on this page knows within five seconds what they're getting and how to get it.</p>
+  <p>Now when people search, click, and land here, they see packages, pricing, and a phone number in one place — fewer back-and-forth texts just to explain the basics.</p>
+  <p>This same pattern works for other local service businesses that live on calls.</p>
+  <a href="https://aplusmobiledetail.com" target="_blank" class="visit-link">visit aplusmobiledetail.com ↗</a>
+</div></article>
+<section class="sms-section">
+  <div class="sms-inner">
+    <span class="sms-ey">Get Started</span>
+    <h2 class="sms-h">your business.<br><em>your page.</em></h2>
+    <p class="sms-p">text me what you do and where you are. live preview within 24 hours. no payment until you approve.</p>
+    <div class="sms-box">
+      <span class="sms-lbl">text me</span>
+      <span class="sms-num">(480) 352-2549</span>
+      <span class="sms-hint">"hey — i run [business] in [city]."</span>
+      <a href="sms:+14803522549&body=hey%20%E2%80%94%20i%20run%20%5Bbusiness%5D%20in%20%5Bcity%5D." class="sms-btn">💬 open messages</a>
+    </div>
+        <p class="sms-alt">prefer email? <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://viachaz.com">viachaz.com</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/payment">payment</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/launch">site intake form</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/refer">refer &amp; earn</a>
+      <span class="footer-sep">·</span>
+      <a href="https://methodwithai.com">method with ai</a>
+      <span class="footer-sep">·</span>
+      <a href="https://mygradpage.com">my grad page</a>
+    </div>
+    <div class="footer-sub">questions? text <a href="sms:+14803522549">(480) 352-2549</a> or email <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></div>
+  </div>
+</footer>
+</body>
+</html>

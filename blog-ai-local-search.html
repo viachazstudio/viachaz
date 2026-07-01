@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What AI Search Means for Local Businesses — And How to Show Up — viachaz studio</title>
+<meta name="description" content="AI search is changing how customers find local businesses. Here's what ChatGPT, Perplexity, and Google AI Overviews actually look for — and how a local business gets cited instead of skipped.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{--blue:#3f5f8f;--blue-dk:#2e4a72;--ink:#2a2e3d;--body:#525f7a;--muted:#8a8f9e;--lav:#dbe2f0;--bg:#f6f2ea;--white:#ffffff;--rule:rgba(82,95,122,0.12)}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;right:0;z-index:200;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;background:rgba(246,242,234,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nl{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ink)}.nl em{font-style:italic;color:var(--blue)}
+.nav-back{font-size:.68rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(63,95,143,.25);padding:.38rem .9rem;border-radius:2px;transition:all .2s}
+.nav-back:hover{background:var(--blue);color:#fff}
+.article-wrap{max-width:680px;margin:0 auto;padding:120px 2rem 80px}
+.article-eyebrow{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.article-eyebrow::before{content:'';width:22px;height:1px;background:var(--blue);display:block;opacity:.5}
+h1{font-family:'Playfair Display',serif;font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:1.4rem}
+h1 em{font-style:italic;color:var(--blue)}
+.article-intro{font-size:1.05rem;color:var(--ink);font-weight:400;line-height:1.8;margin-bottom:2.4rem;padding-bottom:2rem;border-bottom:1px solid var(--rule)}
+h2{font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:400;color:var(--ink);margin-bottom:.7rem;margin-top:2.4rem}
+h2 em{font-style:italic;color:var(--blue)}
+p{font-size:.95rem;color:var(--body);font-weight:300;line-height:1.85;margin-bottom:1.1rem}
+p:last-child{margin-bottom:0}
+.pullquote{border-left:3px solid var(--blue);padding:.8rem 1.4rem;margin:2rem 0;background:var(--lav)}
+.pullquote p{font-family:'Playfair Display',serif;font-size:1rem;font-style:italic;color:var(--ink);font-weight:400;margin:0}
+.divider{border:none;border-top:1px solid var(--rule);margin:2rem 0}
+.article-cta{background:var(--ink);padding:4rem 2rem;margin-top:4rem}
+.article-cta-inner{max-width:520px;margin:0 auto;text-align:center}
+.cta-ey{font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:rgba(219,226,240,.4);font-weight:500;margin-bottom:.8rem;display:block}
+.cta-h{font-family:'Playfair Display',serif;font-size:clamp(1.6rem,2.5vw,2.2rem);font-weight:400;color:#fff;line-height:1.15;margin-bottom:.8rem}
+.cta-h em{font-style:italic;color:var(--lav)}
+.cta-p{font-size:.9rem;color:rgba(219,226,240,.5);font-weight:300;line-height:1.8;margin-bottom:2rem;max-width:42ch;margin-left:auto;margin-right:auto}
+.cta-box{background:rgba(255,255,255,.05);border:1px solid rgba(219,226,240,.1);padding:1.8rem;margin-bottom:1.2rem}
+.cta-lbl{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(219,226,240,.4);margin-bottom:.4rem;display:block}
+.cta-num{font-family:'Playfair Display',serif;font-size:1.8rem;color:#fff;margin-bottom:.6rem;line-height:1;display:block}
+.cta-hint{font-size:.75rem;color:rgba(219,226,240,.35);font-weight:300;line-height:1.6;margin-bottom:1.2rem;font-style:italic;display:block}
+.cta-btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;padding:.75rem 1.4rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:background .2s}
+.cta-btn:hover{background:var(--blue-dk)}
+.cta-alt{font-size:.72rem;color:rgba(219,226,240,.35);font-weight:300;margin-top:1rem}
+.cta-alt a{color:rgba(219,226,240,.55);border-bottom:1px solid rgba(219,226,240,.2)}
+footer{background:var(--ink);border-top:1px solid rgba(219,226,240,.08);padding:2rem 0;width:100%}
+.footer-inner{max-width:960px;margin:0 auto;padding:0 2rem;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.footer-links a{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(219,226,240,.4);transition:color .2s}
+.footer-links a:hover{color:#fff}
+.footer-sep{color:rgba(219,226,240,.15);font-size:.8rem}
+.footer-sub{font-size:.65rem;color:rgba(219,226,240,.25)}
+.footer-sub a{color:rgba(219,226,240,.4)}
+.article-byline{font-size:.72rem;color:var(--muted);font-weight:300;letter-spacing:.04em;margin-bottom:2rem;margin-top:-.6rem}
+@media(max-width:600px){
+  .article-wrap{padding:100px 1.2rem 60px}
+  .article-cta{padding:3rem 1.2rem}
+}
+</style>
+<meta name="author" content="Chaz Johnson">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","headline":"What AI Search Means for Local Businesses — And How to Show Up","description":"AI search is changing how customers find local businesses. Here's what ChatGPT, Perplexity, and Google AI Overviews actually look for — and how a local business gets cited instead of skipped.","url":"https://viachaz.com/blog-ai-local-search.html","datePublished":"2026-05-07","author":{"@type":"Person","name":"Chaz Johnson","url":"https://viachaz.com"},"publisher":{"@type":"Organization","name":"viachaz studio","url":"https://viachaz.com"}}
+</script>
+</head>
+<body>
+<nav>
+  <a class="nl" href="/">viachaz <em>studio</em></a>
+  <a class="nav-back" href="/#blog">← blog</a>
+</nav>
+<div class="article-wrap">
+  <div class="article-eyebrow">AI & Local Search</div>
+  <h1>what AI search means for local businesses —<br><em>and how to show up.</em></h1>
+  <p class="article-byline">by <a href="https://viachaz.com" style="color:inherit;border-bottom:1px solid rgba(63,95,143,.3)">Chaz Johnson</a> &mdash; viachaz studio</p>
+  <p class="article-intro">when someone asks chatgpt "who's a good landscaper in my area" or asks google a question and gets an ai-generated answer, they're not seeing ads. they're not clicking ten blue links. they're getting a direct recommendation — and some local business is named. here's how to be that business.</p>
+<h2>how ai search actually works for local queries</h2>
+<p>AI search systems — Google AI Overviews, ChatGPT, Perplexity, and others — pull from structured web data to generate answers. For local queries, they're looking for businesses that are well-documented across the web: a website with clear service descriptions, a Google Business Profile with accurate information, consistent NAP (name, address, phone) data across multiple platforms, and real reviews that establish credibility.</p>
+<p>The businesses that show up in AI-generated answers aren't the ones that paid the most. They're the ones whose online presence gave the AI the most complete, consistent, trustworthy information to work with. That's a meaningful shift from traditional paid search — and it's one that local businesses can actually compete in.</p>
+
+<div class="divider"></div>
+
+<h2>what ai looks for when it recommends a local business</h2>
+<p>Completeness is the first signal. A business with a website that clearly describes services, a Google profile with accurate hours and real photos, and an Apple Business listing with matching information gives AI systems multiple consistent sources to draw from. Each platform reinforces the others. A business with only a Facebook page gives an AI almost nothing structured to reference.</p>
+<p>Authority comes next. Reviews — their volume, recency, and sentiment — are one of the clearest trust signals an AI has access to. A business with 80 Google reviews averaging 4.8 stars, with responses to most of them, signals reliability in a way that raw web presence alone doesn't. Reviews are essentially third-party validation that an AI can evaluate without needing to visit your shop.</p>
+<p>Specificity matters more than most businesses realize. A website that says "we offer landscaping services" is less useful to an AI than one that says "we do lawn care, paver patios, retaining walls, and fall cleanups for homeowners in Ortonville, Brandon Township, and Clarkston, Michigan." The more specific the content, the more confidently an AI can match it to a specific query.</p>
+
+<div class="pullquote"><p>"ai search doesn't rank who paid the most. it surfaces who is the most complete, consistent, and specific. that's a race local businesses can win."</p></div>
+
+<h2>google ai overviews and the local pack</h2>
+<p>Google's AI Overviews — the generated summaries that now appear above search results for many queries — draw from Google's own data. For local service searches, that means your Google Business Profile is more important than ever. A fully optimized profile with the right primary category, complete description, current photos, and active reviews is exactly what feeds into these AI-generated summaries.</p>
+<p>The local map pack isn't going away. But above it, AI Overviews are now answering questions like "what should I look for in a landscaper" or "how much does a one-page website cost" — and linking to businesses and content that informed those answers. A blog on your website that answers a question a potential customer is asking can now surface in an AI Overview for that question, even if the person never clicked to your site directly.</p>
+
+<div class="divider"></div>
+
+<h2>chatgpt, perplexity, and third-party ai search</h2>
+<p>When someone asks ChatGPT or Perplexity for a local business recommendation, these systems search the web in real time and surface businesses based on what they find. They favor businesses with clear, crawlable websites over those whose entire presence lives inside a social media platform. A Facebook page is largely invisible to these systems. A website with structured content is not.</p>
+<p>Yelp listings, Google Business Profiles, and other structured directories are frequently cited in AI search results for local queries. A business that is present and accurate on these platforms gives AI systems multiple reference points to build confidence from. One platform is a data point. Three consistent platforms start to look like a real, established business.</p>
+
+<div class="divider"></div>
+
+<h2>voice search: the zero-click local query</h2>
+<p>"Hey Siri, find a detailer near me." "Hey Google, what's a good barber in Ortonville." These voice queries return a single result, or a very short list, with no search page to browse. The business that appears is the one that Apple Maps or Google believes is the most relevant, credible, and currently operating option for that query in that location.</p>
+<p>Relevance comes from category and description. Credibility comes from reviews and consistency. Currently operating comes from accurate hours and recent activity on the profile. A business that checks all three of those boxes at the moment a voice query is made wins the referral without competing at all.</p>
+
+<div class="pullquote"><p>"voice search returns one answer, sometimes two. there's no second page. being the result means winning the customer outright."</p></div>
+
+<h2>what to actually do about it</h2>
+<p>The businesses best positioned for AI search in 2026 are the ones doing the basics completely: a website that describes specific services in plain language, a Google Business Profile with accurate information and real photos, an Apple Business listing that matches, reviews that are recent and responded to, and consistent name, address, and phone number across every platform.</p>
+<p>Content helps too. A few focused blog posts answering questions your customers actually ask — "how much does lawn care cost in Ortonville" or "what's the difference between a paver patio and a concrete one" — give AI systems useful, quotable content that positions your business as a knowledgeable local source. You don't need a content team. You need a handful of specific, honest answers to the questions you hear every week.</p>
+<p>That's the full picture. A complete local presence is the foundation. Specific content builds on it. Reviews validate it. And AI search surfaces whoever built it best. Every build through viachaz studio starts with that foundation — website, Google, Apple, consistent — and gives you the structure that everything coming next will reward.</p>
+</div>
+<div class="article-cta">
+  <div class="article-cta-inner">
+    <span class="cta-ey">Get Started</span>
+    <h2 class="cta-h">ready to get found online?<br><em>start here.</em></h2>
+    <p class="cta-p">text me your name, business, and what you do. live preview within 24 hours. no payment until you approve.</p>
+    <div class="cta-box">
+      <span class="cta-lbl">text chaz at</span>
+      <span class="cta-num">(480) 352-2549</span>
+      <span class="cta-hint">"hey — i run [business] in [city]. i need a website."</span>
+      <a href="sms:+14803522549&body=hey%20%E2%80%94%20i%20run%20%5Bbusiness%5D%20in%20%5Bcity%5D.%20i%20need%20a%20website." class="cta-btn">open messages →</a>
+    </div>
+    <p class="cta-alt">prefer email? <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></p>
+  </div>
+</div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://viachaz.com">viachaz.com</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/payment">payment</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/launch">site intake form</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/refer">refer &amp; earn</a>
+      <span class="footer-sep">·</span>
+      <a href="https://methodwithai.com">method with ai</a>
+      <span class="footer-sep">·</span>
+      <a href="https://mygradpage.com">my grad page</a>
+    </div>
+    <div class="footer-sub">questions? text <a href="sms:+14803522549">(480) 352-2549</a> or email <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></div>
+  </div>
+</footer>
+</body>
+</html>

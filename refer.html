@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>refer a business — viachaz studio</title>
+<meta name="description" content="Know a local business that needs a website? Send them my way and get paid when they launch. No selling. No onboarding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+:root{
+  --blue:#3f5f8f;--blue-dk:#2e4a72;--blue-lt:#eef2f8;
+  --ink:#2a2e3d;--body:#525f7a;--muted:#8a8f9e;
+  --lav:#dbe2f0;--bg:#f6f2ea;--white:#ffffff;
+  --rule:rgba(82,95,122,0.12);--wheat:#e0d3b8;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+.container{max-width:680px;margin:0 auto;padding:0 2rem}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:58px;display:flex;align-items:center;justify-content:space-between;padding:0 2rem;background:rgba(246,242,234,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nav-logo{font-family:'Playfair Display',serif;font-size:1.05rem;color:var(--ink)}
+.nav-logo em{font-style:italic;color:var(--blue)}
+.nav-back{font-size:.7rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--blue);border:1px solid rgba(63,95,143,.3);padding:.42rem 1rem;border-radius:2px;transition:all .2s;text-decoration:none}
+.nav-back:hover{background:var(--blue);color:#fff}
+
+/* HERO */
+.hero{padding:120px 0 72px;border-bottom:1px solid var(--rule)}
+.eyebrow{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--blue);font-weight:500;margin-bottom:1rem;display:flex;align-items:center;gap:.6rem}
+.eyebrow::before{content:'';width:22px;height:1px;background:var(--blue);display:block;opacity:.5}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,3rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:1rem}
+h1 em{font-style:italic;color:var(--blue)}
+.hero-sub{font-size:1rem;color:var(--body);font-weight:300;line-height:1.8;max-width:52ch;margin-bottom:2rem}
+.hero-sub strong{color:var(--ink);font-weight:500}
+
+/* SECTIONS */
+section{padding:4rem 0;border-bottom:1px solid var(--rule)}
+section:last-of-type{border-bottom:none}
+h2{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:400;color:var(--ink);margin-bottom:1.4rem}
+h2 em{font-style:italic;color:var(--blue)}
+p{font-size:.95rem;color:var(--body);font-weight:300;line-height:1.85;margin-bottom:1rem}
+p:last-child{margin-bottom:0}
+p strong{color:var(--ink);font-weight:500}
+
+/* STEPS */
+.steps{display:flex;flex-direction:column;gap:1.8rem;margin-top:.5rem}
+.step{display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start}
+.step-num{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--blue);line-height:1;padding-top:.1rem}
+.step-title{font-weight:500;font-size:.9rem;color:var(--ink);margin-bottom:.25rem}
+.step-desc{font-size:.85rem;color:var(--body);font-weight:300;line-height:1.75}
+
+/* COMMISSION TABLE */
+.commission-table{width:100%;border:1px solid var(--rule);border-collapse:collapse;margin-top:1rem}
+.commission-table th{font-size:.62rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);text-align:left;padding:.7rem 1rem;border-bottom:1px solid var(--rule);background:var(--white)}
+.commission-table td{font-size:.88rem;color:var(--body);font-weight:300;padding:.8rem 1rem;border-bottom:1px solid var(--rule)}
+.commission-table tr:last-child td{border-bottom:none}
+.commission-table td:first-child{color:var(--ink);font-weight:400}
+.commission-table td.earn{font-family:'Playfair Display',serif;font-size:1rem;color:var(--blue)}
+.commission-table tr:nth-child(even) td{background:rgba(246,242,234,.5)}
+
+/* RULES */
+.rules-list{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-top:.5rem}
+.rules-list li{font-size:.88rem;color:var(--body);font-weight:300;padding-left:1.4rem;position:relative;line-height:1.65}
+.rules-list li::before{content:'—';position:absolute;left:0;color:var(--blue);font-size:.75rem;line-height:1.8}
+
+/* MESSAGES */
+.messages{display:flex;flex-direction:column;gap:1.2rem;margin-top:.5rem}
+.msg-card{background:var(--white);border:1px solid var(--rule);border-radius:3px;padding:1.4rem 1.6rem}
+.msg-label{font-size:.58rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.6rem;display:block}
+.msg-text{font-size:.88rem;color:var(--ink);font-weight:300;line-height:1.75;font-style:italic}
+
+/* CTA */
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer{background:var(--ink);border-top:1px solid rgba(219,226,240,.08);padding:2rem 0;width:100%}
+.footer-inner{max-width:960px;margin:0 auto;padding:0 2rem;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.footer-links{display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap}
+.footer-links a{font-size:.68rem;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:rgba(219,226,240,.4);transition:color .2s}
+.footer-links a:hover{color:#fff}
+.footer-sep{color:rgba(219,226,240,.15);font-size:.8rem}
+.footer-sub{font-size:.65rem;color:rgba(219,226,240,.25)}
+.footer-sub a{color:rgba(219,226,240,.4)}
+.footer-sub a:hover{color:#fff}
+
+@media(max-width:540px){
+  .hero{padding:100px 0 56px}
+  section{padding:3rem 0}
+}
+
+  /* START SECTION — matches index */
+  .start{background:var(--ink);padding:6rem 0}
+  .sti{max-width:480px;margin:0 auto;text-align:center}
+  .sth{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,3vw,2.4rem);font-weight:400;line-height:1.15;color:var(--white);letter-spacing:-.01em;margin-bottom:1rem}
+  .sth em{font-style:italic;color:var(--wheat)}
+  .stsub{font-size:.92rem;color:rgba(219,226,240,.55);font-weight:300;line-height:1.8;margin-bottom:2.4rem}
+  .smb{background:rgba(255,255,255,.05);border:1px solid rgba(219,226,240,.1);padding:2rem;margin-bottom:1.2rem;text-align:center}
+  .sml{font-size:.6rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(219,226,240,.4);margin-bottom:.4rem;display:block}
+  .smn{font-family:'Playfair Display',serif;font-size:1.8rem;color:var(--white);margin-bottom:.6rem;line-height:1;display:block}
+  .smh{font-size:.75rem;color:rgba(219,226,240,.35);font-weight:300;line-height:1.6;margin-bottom:1.2rem;font-style:italic;display:block}
+  .smbt{display:inline-flex;align-items:center;gap:.5rem;background:var(--blue);color:#fff;padding:.75rem 1.4rem;font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:background .2s;white-space:nowrap}
+  .smbt:hover{background:var(--blue-dk)}
+  .sta{font-size:.72rem;color:rgba(219,226,240,.35);font-weight:300;margin-top:1.2rem}
+  .sta a{color:rgba(219,226,240,.55);border-bottom:1px solid rgba(219,226,240,.2)}
+  .sta a:hover{color:var(--white)}
+  .start .eyebrow{color:rgba(219,226,240,.4);justify-content:center}
+  .start .eyebrow::before{display:none}
+  .wheat{color:var(--wheat)}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="https://viachaz.com">viachaz <em>studio</em></a>
+  <a class="nav-back" href="https://viachaz.com">← back</a>
+</nav>
+
+<div class="container">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="eyebrow">referral program</div>
+    <h1>know a business that needs a website?<br><em>get paid when they launch.</em></h1>
+    <p class="hero-sub">no selling. no onboarding. no following up. <strong>just connect the right people</strong> — and collect 20% when the deal closes.</p>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>how it <em>works.</em></h2>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <div>
+          <p class="step-title">find a business that needs a site</p>
+          <p class="step-desc">barbers, detailers, landscapers, contractors, cleaners — anyone local running on word of mouth with no website and nothing showing up on google.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <div>
+          <p class="step-title">send them chaz's number</p>
+          <p class="step-desc">give them (480) 352-2549 and tell them to mention your name when they text. let them know it's a website, google business profile, and apple business connect — and they see it before they pay anything.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <div>
+          <p class="step-title">chaz handles everything</p>
+          <p class="step-desc">the build, the preview, the back-and-forth, the payment. you don't need to be involved after the intro.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <div>
+          <p class="step-title">you get paid</p>
+          <p class="step-desc">once chaz gets paid, your commission goes out within 7 days. no chasing, no negotiating.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMMISSION -->
+  <section>
+    <h2>what you <em>earn.</em></h2>
+    <p>20% of whatever they pay. flat and simple. every build includes a google business profile setup or cleanup and apple business connect — google, apple maps, and siri. that's part of what they're paying for.</p>
+    <table class="commission-table">
+      <thead>
+        <tr>
+          <th>site</th>
+          <th>they pay</th>
+          <th>you earn</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>one-page site + google & apple profiles</td>
+          <td>$500</td>
+          <td class="earn">$100</td>
+        </tr>
+        <tr>
+          <td>custom build + google & apple profiles</td>
+          <td>$1,000</td>
+          <td class="earn">$200</td>
+        </tr>
+        <tr>
+          <td>custom build + google & apple profiles</td>
+          <td>$1,500</td>
+          <td class="earn">$300</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="margin-top:1rem;font-size:.8rem;color:var(--muted)">referral commission caps at $300 on large builds. paid via cash app, apple pay, or venmo.</p>
+  </section>
+
+  <!-- RULES -->
+  <section>
+    <h2>the <em>rules.</em></h2>
+    <ul class="rules-list">
+      <li>they must mention your name in their <strong>first text</strong> to chaz. no retroactive credit.</li>
+      <li>you get paid <strong>after chaz gets paid</strong>. not before.</li>
+      <li>one referral credit per business. if two people refer the same owner, <strong>first mention wins</strong>.</li>
+      <li>no credit if the deal doesn't close. no exceptions.</li>
+      <li>payment goes out <strong>within 7 days</strong> of chaz receiving full payment.</li>
+      <li>cash app, apple pay, or venmo. your choice.</li>
+    </ul>
+  </section>
+
+  <!-- WHAT TO SAY -->
+  <section>
+    <h2>what to <em>say.</em></h2>
+    <p>Copy any of these and send as-is. Or say it in your own words — whatever feels natural.</p>
+    <div class="messages">
+      <div class="msg-card">
+        <span class="msg-label">the simple intro</span>
+        <p class="msg-text">"Hey, do you have a website for the business? My friend Chaz sets that up for people , clean, flat price, and you see it before you pay a dollar. Just thought of you."</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-label">the direct one</span>
+        <p class="msg-text">"Hey, thought of you. My friend Chaz does websites and google profiles for local businesses. $500, ready in 24 hours, and you don't pay until you like it. Want me to send you his number?"</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-label">for someone with a bad site</span>
+        <p class="msg-text">"Hey, random thought but , my friend does websites for small businesses and I feel like yours could be doing more for you. No pressure at all, just wanted to mention it. Want me to connect you guys?"</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-label">for someone with no site</span>
+        <p class="msg-text">"Hey, I've been meaning to mention , my friend Chaz does websites and google profiles for local businesses. $500, and you see the whole thing before you pay anything. Think it could be useful for you."</p>
+      </div>
+      <div class="msg-card">
+        <span class="msg-label">the casual one</span>
+        <p class="msg-text">"Random but I kept thinking about you when I heard about this. My friend builds websites and google profiles for local businesses. Super affordable, fast, and zero commitment to even look at it. Want me to connect you?"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTIONS -->
+  <section>
+    <h2>how to make sure you get <em>credit.</em></h2>
+    <ul class="rules-list">
+      <li>when they text chaz, they need to say your name. tell them before you give them the number.</li>
+      <li>you don't need to follow up or stay involved. once you make the intro, step back.</li>
+      <li>don't promise specific prices — let chaz handle the conversation.</li>
+      <li>chaz will confirm when a deal closes and when your payment is on the way.</li>
+      <li>if you don't hear anything after a deal, text chaz and ask. always fine.</li>
+    </ul>
+  </section>
+
+  <!-- CTA -->
+</div>
+<section class="start">
+  <div class="sti">
+      <span class="eyebrow">get started</span>
+      <h2 class="sth">text chaz your name<br><em>so you're on record.</em></h2>
+      <p class="stsub">then start connecting.<br>if you know five local business owners and two of them get a site, that's $200 for sending a text.</p>
+      <div class="smb">
+        <span class="sml">text chaz at</span>
+        <span class="smn">(480) 352-2549</span>
+        <span class="smh">"hey — i want to refer some businesses. my name is [your name]."</span>
+        <a href="sms:+14803522549&body=hey%20%E2%80%94%20i%20want%20to%20refer%20some%20businesses.%20my%20name%20is%20" class="smbt">open messages →</a>
+      </div>
+      <p class="sta">or email <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="https://viachaz.com">viachaz.com</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/payment">payment</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/launch">site intake form</a>
+      <span class="footer-sep">·</span>
+      <a href="https://viachaz.com/refer">refer & earn</a>
+      <span class="footer-sep">·</span>
+      <a href="https://methodwithai.com">method with ai</a>
+      <span class="footer-sep">·</span>
+      <a href="https://mygradpage.com">my grad page</a>
+    </div>
+    <div class="footer-sub">questions? text <a href="sms:+14803522549">(480) 352-2549</a> or email <a href="mailto:chaz@viachaz.com">chaz@viachaz.com</a></div>
+  </div>
+</footer>
+</body>
+</html>
